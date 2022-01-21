@@ -3,7 +3,7 @@ class Solution {
         int gasInTank = 0;
         int start = 0;
         
-        // If the total (gas - cost) across the entire route is >= 0, then we know a possible cycle exists
+        // If the total (gas - cost) across the entire route is < 0, then we know there's no possible route.
         int routeGas = 0;
         
         for (int i = 0; i < gas.length; i++) {
